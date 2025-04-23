@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Black & White mode styles */
+.bw-mode {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+/* Optional: You might want to exclude some elements from the filter */
+.bw-mode img, 
+.bw-mode video, 
+.bw-mode .no-bw-filter {
+  filter: grayscale(0) !important;
+  -webkit-filter: grayscale(0) !important;
+}
